@@ -1,0 +1,92 @@
+$primary: #2E112D
+$secondary: #f2bcc3
+$text: #F0433A
+$text2: #C9283E
+$text3: #fbe9eb
+
+body
+    background-color: $primary
+    font-family: "Quicksand", sans-serif
+    color: $secondary
+
+    h1
+        color: $text
+
+    p
+        color: $secondary !important
+
+header
+    font-family: "Quicksand", sans-serif
+    font-weight: 700 !important
+    background-color: $primary
+
+.nav-link
+    letter-spacing: .05rem
+    color: $secondary !important
+    border-bottom: solid 3px transparent !important
+
+    &:hover, &:focus
+        border-color: $secondary !important
+        color: $text3 !important
+
+
+.navbar-brand
+    font-family: "Molle" !important
+    color: $text !important
+
+    &:hover
+        color: $text2 !important
+
+.cta
+    background-color: $text
+    &:hover
+        background-color: #f13126
+
+.category
+    overflow: hidden
+    text-align: center
+
+    .badge
+        opacity: .8
+        font-weight: bold
+        margin: .6rem
+        background-color: $primary
+        color: $secondary
+
+section
+    border-radius: 1rem !important
+    h1
+        color: $primary
+        font-weight: 
+
+    p, h4, span
+        color: $text3 !important
+
+section:nth-of-type(1), section:nth-of-type(3)
+    background-color: $text2
+
+section:nth-of-type(2)
+    background-color: $text
+
+.card
+    background-color: #f13126
+    border-radius: 1rem !important
+
+.wave
+    animation: 1s infinite
+    animation-name: wave
+
+footer
+    .navbar-brand
+        color: $secondary !important
+
+
+@keyframes wave
+    0%
+        transform: rotate(0deg)
+    
+    50%
+        transform: rotate(-45deg)
+
+    100%
+        transform: rotate(0deg)
