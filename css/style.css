@@ -15,7 +15,8 @@ body p {
 header {
   font-family: "Quicksand", sans-serif;
   font-weight: 700 !important;
-  background-color: #2E112D;
+  background: url("../images/wave-header.svg") no-repeat top center;
+  background-size: cover;
 }
 
 .nav-link {
@@ -89,6 +90,11 @@ section:nth-of-type(2) {
           animation: 1s infinite;
   -webkit-animation-name: wave;
           animation-name: wave;
+}
+
+footer {
+  background: url("../images/wave-footer.svg") no-repeat center bottom;
+  background-size: cover;
 }
 
 footer .navbar-brand {
