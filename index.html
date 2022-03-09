@@ -30,6 +30,8 @@
 </head>
 <body id="about">
     <header class="px-md-5">
+
+        <!-- Navigations -->
         <nav id="navbar" class="navbar navbar-dark">
             <div class="container w-100">
                 <div class="row d-flex flex-row justify-content-between align-items-center w-100">
@@ -60,7 +62,9 @@
                 </div>
             </div>
         </nav>
+        <!-- Navigations - end -->
 
+        <!-- Hero Section -->
         <div id="hero" class="container pt-md-5 mt-5 mb-5 pb-5 d-flex flex-column align-items-start justify-content-center">
             <span class="wave display-1 fw-bolder mb-2">🖐</span>
             <div class="d-flex flex-row justify-content-center align-items-center">
@@ -70,9 +74,12 @@
             </div>
             <p class="fs-5 fw-normal">Queez is an Open Trial Database powered trivia platform for YOU quizheads!</p>
         </div>
+
     </header>
 
     <main class="p-md-5 p-3">
+
+        <!-- Features section - start -->
         <section id="features" class="mb-5 p-md-5 px-3 pt-5">
             <h2 class="h1 fw-bold display-5 text-start">👌 Features</h2>
 
@@ -107,15 +114,19 @@
                 </div>
             </div>
         </section>
+        <!-- Features section - end -->
 
+        <!-- Categories section - start -->
         <section id="category" class="category mb-5 p-md-5 px-3 pt-5">
             <h2 class="h1 fw-bold display-5 text-start">🤘 Categories</h2>
-
+            
             <p class="fs-5 mt-4 text-start">Queez offers <b>COLOSSAL</b> amount of various categories to quiz in.<br>Here are few of them...</p>
-
+            
             <img src="images/category-banner.png" class="img-fluid mb-3" alt="Quiz Categories">
         </section>
+        <!-- Categories section - end -->
 
+        <!-- User Powered section - start -->
         <section id="powered" class="mb-5 p-md-5 px-3 pt-5">
             <h2 class="h1 fw-bold display-5 text-start">✊ User Powered</h2>
 
@@ -123,12 +134,15 @@
                 <figure class="figure">
                     <img src="images/opentb-logo.png" class="figure-img img-fluid" alt="Open Trivial Database Website Logo" style="max-width: 300px;">
                 </figure>
-
+                
                 <p class="fs-5 my-4 text-center"><b>OpenTDb</b> is a free to use, user-contributed trivia question database,<br class="d-none d-lg-block">with more than 4,067 verified questions. So, it's from you, for you.</p>
             </div>
         </section>
+        <!-- User Powered section - end -->
+        
     </main>
 
+    <!-- Footer - start -->
     <footer class="px-md-5 px-2 py-5" style="padding-top: 5rem !important;">
         <div class="row">
             <div class="col-xl mb-2">
@@ -152,10 +166,12 @@
             </div>
         </div>
     </footer>
+    <!-- Footer - end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
     <script>
+        // Enables tooltip and popovers
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
