@@ -4,7 +4,7 @@
 Quiz platform landing page.
 <br><br>
 ### Built with...
-- HTML5
+- Semantic HTML
 - Bootstrap
 - SASS
 
