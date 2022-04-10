@@ -5,92 +5,89 @@ $text2: #C9283E
 $text3: #fbe9eb
 
 body
-    background-color: $primary
-    font-family: "Quicksand", sans-serif
-    color: $secondary
+	background-color: $primary
+	font-family: "Quicksand", sans-serif
+	color: $secondary
 
-    h1
-        color: $text
+	h1
+		color: $text
 
-    p
-        color: $secondary !important
+	p
+		color: $secondary !important
 
 header
-    font-family: "Quicksand", sans-serif
-    font-weight: 700 !important
-    background: url("../images/wave-header.svg") no-repeat top center
-    background-size: cover
+	font-family: "Quicksand", sans-serif
+	font-weight: 700 !important
+	background: url("../images/wave-header.svg") no-repeat top center
+	background-size: cover
 
 .nav-link
-    letter-spacing: .05rem
-    color: $secondary !important
-    border-bottom: solid 3px transparent !important
+	letter-spacing: .05rem
+	color: $secondary !important
+	border-bottom: solid 3px transparent !important
 
-    &:hover, &:focus
-        border-color: $secondary !important
-        color: $text3 !important
+	&:hover, &:focus
+		border-color: $secondary !important
+		color: $text3 !important
 
+.logo-white
+	filter: brightness(3)
 
 .navbar-brand
-    font-family: "Molle" !important
-    color: $text !important
+	font-family: "Molle" !important
+	color: $text !important
 
-    &:hover
-        color: $text2 !important
+	&:hover
+		color: $text2 !important
 
 .cta
-    background-color: $text2
-    &:hover
-        background-color: #f13126
+	background-color: $text2
+	&:hover
+		background-color: #f13126
 
 .category
-    text-align: center
+	text-align: center
 
-    .badge
-        opacity: .8
-        font-weight: bold
-        margin: .6rem
-        background-color: $primary
-        color: $secondary
+	.badge
+		opacity: .8
+		font-weight: bold
+		margin: .6rem
+		background-color: $primary
+		color: $secondary
 
 section
-    border-radius: 1rem !important
+	border-radius: 1rem !important
+	background-color: $text
 
-    h2
-        color: $primary
+	h2
+		color: $primary
 
-    p, h4, span
-        color: $text3 !important
-
-section:nth-of-type(1), section:nth-of-type(3)
-    background-color: $text2
-
-section:nth-of-type(2)
-    background-color: $text
+	p, h4, span
+		color: $text3 !important
 
 .card
-    // background-color: #f13126
-    background-color: #820333
-    border-radius: 1rem !important
+	// background-color: #f13126
+	background-color: #820333
+	border-radius: 1rem !important
 
 .wave
-    animation: 1s infinite
-    animation-name: wave
+	animation: 1s infinite
+	animation-name: wave
 
 footer
-    background: url("../images/wave-footer.svg") no-repeat center bottom
-    background-size: cover
+	background: url("../images/wave-footer.svg") no-repeat center bottom
+	background-size: cover
 
-    .navbar-brand
-        color: $secondary !important
+	.navbar-brand
+		color: $secondary !important
 
 
 @keyframes wave
-    0%
-        transform: rotate(0deg)
-    
-    50%
-        transform: rotate(-45deg)
+	0%
+		transform: rotate(0deg)
+	
+	50%
+		transform: rotate(-45deg)
 
-    100%
-        transform: rotate(0deg)
+	100%
+		transform: rotate(0deg)
