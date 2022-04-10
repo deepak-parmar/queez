@@ -1,279 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Deepak Parmar">
-	<meta name="keywords" content="queez, quiz, Sass, Bootstrap, JavaScript, HTML, CSS, OpenTDb">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Deepak Parmar">
+    <meta name="keywords" content="queez, quiz, Sass, Bootstrap, JavaScript, HTML, CSS, OpenTDb">
 
-	<meta property="og:title" content="Queez">
-	<meta property="og:type" content="website" />
-	<meta property="og:description" name="description" content="User Powered OpenTDb API-Connected Quiz Platform.">
-	<meta property="og:image" content="https://deepak-parmar.github.io/queez/images/social-thumb.jpg">
-	<meta property="og:image:alt" content="Design image of Queez" />
-	<meta property="og:url" content="https://deepak-parmar.github.io/queez">
-	<meta property="og:site_name" content="deepak-parmar.github.io/queez">
+    <meta property="og:title" content="Queez">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" name="description" content="User Powered OpenTDb API-Connected Quiz Platform.">
+    <meta property="og:image" content="https://deepak-parmar.github.io/queez/images/social-thumb.jpg">
+    <meta property="og:image:alt" content="Design image of Queez" />
+    <meta property="og:url" content="https://deepak-parmar.github.io/queez">
+    <meta property="og:site_name" content="deepak-parmar.github.io/queez">
 
-	<title>Queez</title>
+    <title>Queez</title>
 
-	<link rel="icon" type="image/png" href="images/favicon.png">
-	
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-	<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
-	
-	<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-	<style>
-		/* vietnamese */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 500;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2) format('woff2');
-			unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-		}
-		/* latin-ext */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 500;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-		/* latin */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 500;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-		/* vietnamese */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 600;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2) format('woff2');
-			unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-		}
-		/* latin-ext */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 600;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-		/* latin */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 600;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-		/* vietnamese */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 700;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2) format('woff2');
-			unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-		}
-		/* latin-ext */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 700;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-		/* latin */
-		@font-face {
-			font-family: 'Quicksand';
-			font-style: normal;
-			font-weight: 700;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-	</style>
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+        as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body id="about">
 
-    <header class="px-md-5">
+	<header class="px-md-5">
 
-        <!-- Navigations -->
-        <nav id="navbar" class="navbar navbar-dark">
-            <div class="container w-100">
-                <div class="row d-flex flex-row justify-content-between align-items-center w-100">
-                    <div class="col-md">
-                        <!-- <a href="/queez" class="navbar-brand fs-1 fw-lighter">Queez</a> -->
-                        <a href="/queez">
-                            <img src="images/queez-logo-main.png" width="140" height="60" class="img-fluid" alt="Queez Logo">
-                        </a>
-                    </div>
-                    
-                    <ul class="col-md nav nav-pills d-flex flex-row justify-content-center align-items-center">
-                        <li class="nav-item">
-                            <a href="#top" class="nav-link p-2 py-3 mx-2 text-light rounded-0">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#features" class="nav-link p-2 py-3 mx-2 text-light rounded-0">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#category" class="nav-link p-2 py-3 mx-2 text-light rounded-0">Categories</a>
-                        </li>
-                    </ul>
+		<!-- Navigations -->
+		<nav id="navbar" class="navbar navbar-dark">
+			<div class="container w-100">
+				<div class="row d-flex flex-row justify-content-between align-items-center w-100">
+					<div class="col-md">
+							<!-- <a href="/queez" class="navbar-brand fs-1 fw-lighter">Queez</a> -->
+							<a href="/queez">
+									<img src="images/queez-logo-main.png" width="140" height="60" class="img-fluid"
+											alt="Queez Logo">
+							</a>
+					</div>
 
-                    <div class="col-md d-flex justify-content-end">
-                        <a href="#" class="btn cta fw-bold text-light border border-0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" 
-                        title="Project Not Complete Yet!"
-                        data-bs-content="Apologies! But this project is under work at the moment.">GIVE IT A TRY</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Navigations - end -->
+					<ul class="col-md nav nav-pills d-flex flex-row justify-content-center align-items-center">
+							<li class="nav-item">
+									<a href="#top" class="nav-link p-2 py-3 mx-2 text-light rounded-0">About</a>
+							</li>
+							<li class="nav-item">
+									<a href="#features" class="nav-link p-2 py-3 mx-2 text-light rounded-0">Features</a>
+							</li>
+							<li class="nav-item">
+									<a href="#category" class="nav-link p-2 py-3 mx-2 text-light rounded-0">Categories</a>
+							</li>
+					</ul>
 
-        <!-- Hero Section -->
-        <div id="hero" class="container pt-md-5 mt-5 mb-5 pb-5 d-flex flex-column align-items-start justify-content-center">
-            <span class="wave display-1 fw-bolder mb-2">🖐</span>
-            <div class="d-flex flex-row justify-content-center align-items-center">
-                <h1 class="display-4 fw-bolder">
-                    Hey! Welcome to<br>the All-New-N-Rich quiz spot.
-                </h1>
-            </div>
-            <p class="fs-5 fw-normal">Queez is an Open Trial Database powered trivia platform for YOU quizheads!</p>
-        </div>
+					<div class="col-md d-flex justify-content-end">
+							<a href="#" class="btn cta fw-bold text-light border border-0" data-bs-container="body"
+								data-bs-toggle="popover" data-bs-placement="bottom" title="Project Not Complete Yet!"
+								data-bs-content="Apologies! But this project is under work at the moment.">GIVE IT A TRY</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Navigations - end -->
 
-    </header>
+			<!-- Hero Section -->
+			<div id="hero" class="container pt-md-5 mt-5 mb-5 pb-5 d-flex flex-column align-items-start justify-content-center">
+				<span class="wave display-1 fw-bolder mb-2">🖐</span>
+				<div class="d-flex flex-row justify-content-center align-items-center">
+						<h1 class="display-4 fw-bolder">
+								Hey! Welcome to<br>the All-New-N-Rich quiz spot.
+						</h1>
+				</div>
+				<p class="fs-5 fw-normal">Queez is an Open Trial Database powered trivia platform for YOU quizheads!</p>
+			</div>
 
+	</header>
 
-    <main class="p-md-5 p-3">
+	<main class="p-md-5 p-3">
 
-        <!-- Features section - start -->
-        <section id="features" class="mb-5 p-md-5 px-3 pt-5">
-            <h2 class="h1 fw-bold display-5 text-start">👌 Features</h2>
+		<!-- Features section - start -->
+		<section id="features" class="mb-5 p-md-5 px-3 pt-5">
+			<h2 class="h1 fw-bold display-5 text-start">👌 Features</h2>
 
-            <p class="fs-5 my-4 text-start">You get <b>VARIETY</b> of customizable control over your quizzes...</p>
+			<p class="fs-5 my-4 text-start">You get <b>VARIETY</b> of customizable control over your quizzes...</p>
 
-            <div class="row g-3 d-flex justify-content-center">
-                <div class="col-xl">
-                    <div class="card h-100 my-3 d-flex flex-column justify-content-center align-items-center shadow p-3 p-md-5 rounded-3">
-                        <div>
-                            <span class="bi bi-stopwatch display-1 fw-bold">/</span>
-                            <span class="bi bi-infinity display-1 fw-bold"></span>
-                        </div>
-                        <h3 class="h4 fw-bold my-4">Timed or Infinite</h3>
-                        <p class="card-text text-center">Set time limit for quiz or go on for infinity! It's in your hands.</p>
-                    </div>
-                </div>
+			<div class="row g-3 d-flex justify-content-center">
+				<div class="col-xl">
+					<div class="card h-100 my-3 d-flex flex-column justify-content-center align-items-center shadow p-3 p-md-5 rounded-3">
+							<div>
+									<span class="bi bi-stopwatch display-1 fw-bold">/</span>
+									<span class="bi bi-infinity display-1 fw-bold"></span>
+							</div>
+							<h3 class="h4 fw-bold my-4">Timed or Infinite</h3>
+							<p class="card-text text-center">Set time limit for quiz or go on for infinity! It's in your hands.</p>
+					</div>
+				</div>
 
-                <div class="col-xl">
-                    <div class="card h-100 my-3 d-flex flex-column justify-content-center align-items-center shadow p-3 p-md-5 rounded-3">
-                        <span class="bi bi-shield-slash-fill display-1 fw-bold"></span>
-                        <h3 class="h4 text-center fw-bold my-4">No Signup Hassle</h3>
-                        <p class="card-text text-center">No Strings Attached! No signup or login cliché here.</p>
-                    </div>
-                </div>
+				<div class="col-xl">
+					<div class="card h-100 my-3 d-flex flex-column justify-content-center align-items-center shadow p-3 p-md-5 rounded-3">
+							<span class="bi bi-shield-slash-fill display-1 fw-bold"></span>
+							<h3 class="h4 text-center fw-bold my-4">No Signup Hassle</h3>
+							<p class="card-text text-center">No Strings Attached! No signup or login cliché here.</p>
+					</div>
+				</div>
 
-                <div class="col-xl">
-                    <div class="card h-100 my-3 d-flex flex-column justify-content-center align-items-center shadow p-3 p-md-5 rounded-3">
-                        <span class="bi bi-tools display-1 fw-bold"></span>
-                        <h3 class="h4 text-center fw-bold my-4">Customized Questions</h3>
-                        <p class="card-text text-center">You can mix and match questions with multiple different categories.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Features section - end -->
+				<div class="col-xl">
+					<div class="card h-100 my-3 d-flex flex-column justify-content-center align-items-center shadow p-3 p-md-5 rounded-3">
+						<span class="bi bi-tools display-1 fw-bold"></span>
+						<h3 class="h4 text-center fw-bold my-4">Customized Questions</h3>
+						<p class="card-text text-center">You can mix and match questions with multiple different categories.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Features section - end -->
 
-        <!-- Categories section - start -->
-        <section id="category" class="category mb-5 p-md-5 px-3 pt-5">
-            <h2 class="h1 fw-bold display-5 text-start">🤘 Categories</h2>
-            
-            <p class="fs-5 mt-4 text-start">Queez offers <b>COLOSSAL</b> amount of various categories to quiz in.<br>Here are few of them...</p>
-            
-            <img src="images/category-banner.png" width="1100" height="365" class="img-fluid mb-3" alt="Quiz Categories">
-        </section>
-        <!-- Categories section - end -->
+		<!-- Categories section - start -->
+		<section id="category" class="category mb-5 p-md-5 px-3 pt-5">
+			<h2 class="h1 fw-bold display-5 text-start">🤘 Categories</h2>
 
-        <!-- User Powered section - start -->
-        <section id="powered" class="mb-5 p-md-5 px-3 pt-5">
-            <h2 class="h1 fw-bold display-5 text-start">✊ User Powered</h2>
+			<p class="fs-5 mt-4 text-start">Queez offers <b>COLOSSAL</b> amount of various categories to quiz in.<br>Here are few of them...</p>
 
-            <div class="mt-5 h-100 d-flex flex-column justify-content-center align-items-center">
-                <figure class="figure">
-                    <img src="images/opentb-logo.png" class="figure-img img-fluid" alt="Open Trivial Database Website Logo" style="max-width: 300px;">
-                </figure>
-                
-                <p class="fs-5 my-4 text-center"><b>OpenTDb</b> is a free to use, user-contributed trivia question database,<br class="d-none d-lg-block">with more than 4,067 verified questions. So, it's from you, for you.</p>
-            </div>
-        </section>
-        <!-- User Powered section - end -->
-        
-    </main>
+			<img src="images/category-banner.png" width="1100" height="365" class="img-fluid mb-3" alt="Quiz Categories">
+		</section>
+		<!-- Categories section - end -->
 
+		<!-- User Powered section - start -->
+		<section id="powered" class="mb-5 p-md-5 px-3 pt-5">
+			<h2 class="h1 fw-bold display-5 text-start">✊ User Powered</h2>
 
-    <footer class="px-md-5 px-2 py-5" style="padding-top: 5rem !important;">
-        <div class="row">
-            <div class="col-xl mb-2">
-                <!-- <a href="/queez" class="navbar-brand fs-1 fw-lighter">Queez</a> -->
-                <a href="/queez">
-                    <img class="img-fluid"
-                        src="images/queez-logo-main.png"
-                        width="140" height="60"
-                        style="filter: brightness(3);"
-                        alt="Queez Logo">
-                </a>
-                <br>Developed by&nbsp;<a href="https://github.com/deepak-parmar" target="_blank"
-                class="text-light fw-bold text-decoration-none" data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                title="Go to profile">Deepak Parmar</a>
-                <br><p>User Powered OpenTDb API-Connceted Quiz Platform
-                <br>&copy; <span id="year"></span> Queez</p>
-            </div>
+			<div class="mt-5 h-100 d-flex flex-column justify-content-center align-items-center">
+				<figure class="figure">
+						<img src="images/opentb-logo.png" class="figure-img img-fluid" alt="Open Trivial Database Website Logo" style="max-width: 300px;">
+				</figure>
 
-            <div class="col-sm d-flex align-items-center justify-content-end">
-                <a href="https://github.com/deepak-parmar/queez" target="_blank" class="text-light fs-2 p-4 text-decoration-none d-flex flex-row justify-content-between align-items-center">
-                    <span class="fs-6 ms-1">&nbsp;Check out source code on </span>&nbsp;
-                    <span class="bi bi-github d-flex flex-row justify-content-between align-items-center"><span class="fs-6 ms-1">&nbsp;GitHub</span></span>
-                </a>
-            </div>
-        </div>
-    </footer>
+				<p class="fs-5 my-4 text-center"><b>OpenTDb</b> is a free to use, user-contributed trivia question database,
+				<br class="d-none d-lg-block">with more than 4,067 verified questions. So, it's from you, for you.</p>
+			</div>
+		</section>
+		<!-- User Powered section - end -->
+	</main>
 
+	<footer class="px-md-5 px-2 py-5" style="padding-top: 5rem !important;">
+			<div class="row">
+					<div class="col-xl mb-2">
+							<!-- <a href="/queez" class="navbar-brand fs-1 fw-lighter">Queez</a> -->
+							<a href="/queez">
+									<img class="img-fluid" src="images/queez-logo-main.png" width="140" height="60"
+										style="filter: brightness(3);" alt="Queez Logo">
+							</a>
+							<br>Developed by&nbsp;
+							<a href="https://github.com/deepak-parmar" target="_blank"
+								class="text-light fw-bold text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top"
+								title="Go to profile">Deepak Parmar</a>
+							<br>
+							<p>
+								User Powered OpenTDb API-Connceted Quiz Platform
+								<br>&copy; <span id="year"></span> Queez
+							</p>
+					</div>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // Enables tooltip and popovers
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
+					<div class="col-sm d-flex align-items-center justify-content-end">
+							<a href="https://github.com/deepak-parmar/queez" target="_blank"
+									class="text-light fs-2 p-4 text-decoration-none d-flex flex-row justify-content-between align-items-center">
+									<span class="fs-6 ms-1">&nbsp;Check out source code on </span>&nbsp;
+									<span class="bi bi-github d-flex flex-row justify-content-between align-items-center">
+										<span class="fs-6 ms-1">&nbsp;GitHub</span>
+									</span>
+							</a>
+					</div>
+			</div>
+	</footer>
 
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        })
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        let yr = new Date()
-        document.getElementById("year").textContent = yr.getFullYear()
-    </script>
+	<script>
+		// Enables tooltip and popovers
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+			return new bootstrap.Popover(popoverTriggerEl)
+		})
+
+		let yr = new Date()
+		document.getElementById("year").textContent = yr.getFullYear()
+	</script>
 </body>
+
 </html>
