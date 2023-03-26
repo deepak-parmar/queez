@@ -1,6 +1,6 @@
-![Thumbnail](images/social-thumb.jpg)
+![Thumbnail](https://deepak-parmar.github.io/queez/images/social-thumb.jpg)
 <br><br>
-# ![Queez Logo](images/queez-logo-main.png)
+# ![Queez Logo](https://deepak-parmar.github.io/queez/images/queez-logo-main.png)
 Quiz platform landing page.
 <br><br>
 ### Built with...
